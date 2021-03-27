@@ -61,3 +61,19 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+
+/* WHAT I DO */
+.work-col{
+    height: 20vw;
+    border-radius: 0.55vw;
+    margin: 1vw;
+    
+    background-color: whitesmoke;
+    position: relative;
+    overflow: hidden;
+}
+.work-icons{
+    width: auto;
+    height: 3.125vw;
+    position: center;
+}
