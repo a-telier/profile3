@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.sidenav');
+//     var instances = M.Sidenav.init(elems, options);
+//   });
 
   // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
   // var collapsibleElem = document.querySelector('.collapsible');
@@ -9,7 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Or with jQuery
 
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-        
+$(document).ready(function(){
+$('.sidenav').sidenav();
+});
+
+
+// CAROUSEL
+// document.addEventListener('DOMContentLoaded', function() {
+// var elems = document.querySelectorAll('.carousel');
+// var instances = M.Carousel.init(elems, options);
+// });
+
+// Or with jQuery
+
+$(document).ready(function(){
+$('.carousel').carousel();
+});

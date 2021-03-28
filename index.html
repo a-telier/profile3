@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="jquery-3.5.1.min.js"></script>
         <!-- Own CSS & JS -->
         <link rel="stylesheet" href="assets/css/base.css">
         <script src="assets/js/base.js"></script>
@@ -31,36 +32,18 @@
     <main>
         <!-- Navigation -->
         <header>
-            <nav>
-                <ul id="slide-out" class="sidenav">
-                    <li>
-                        <div class="user-view">
-                        <div class="background">
-                            <img src="images/office.jpg">
-                        </div>
-                        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                        <a href="#name"><span class="white-text name">John Doe</span></a>
-                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                        </div>
-                    </li>
-                    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-                    <li><a href="#!">Second Link</a></li>
-                    <li><div class="divider"></div></li>
-                    <li><a class="subheader">Subheader</a></li>
-                    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-                </ul>
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            </nav>
+            <nav></nav>
         </header>
 
         <!-- Landing -->
         <div class="container-fluid">
             <div class="row animate__animated animate__bounce animate__delay-2s">
+                <hr>
                 <div class="col s12 valign-wrapper">
                     <div class="text-center text-white position-absolute" 
                     style="padding-right: 10%; padding-left: 10%;">
-                        <h1>Hello! My name is Alex.</h1>
-                        <h3 class="">I am a digital leader with both technical and practical competences, experienced building teams, brands and business growth through digital communication & sales channels.</h3>
+                        <h1>Hello! My name is Alexandra Rabi.</h1>
+                        <h3 class="">I build teams, brands and business growth through digital communication & sales channels.</h3>
                     </div>
                     <img class="bg-landing d-sm-none" style="height: 160vw; width: 100%;" src="assets/img/landing/bg-coffee-and-notebook-vertical.png" alt="">
                     <img class="bg-landing d-none d-lg-block" style="height: 30vw; width: 100%;" src="assets/img/landing/bg-coffee-and-notebook.png" alt="">
@@ -133,10 +116,23 @@
                 </div>
             </div> 
             <hr>
+            <!-- Brands -->
             <div class="row">
-                <div>
+                <div class="col s12">
                     <h1>Brands I have worked with</h1>
                     <img class="responsive-img" src="assets/img/brands/brands.gif" alt="">
+                </div>
+            </div>
+            <hr>
+            <!-- Projects -->
+            <div class="row">
+                <div class="col s12">
+                    <h1>Projects I have built</h1>
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="assets/img/projects/adam-solomon-WHUDOzd5IYU-unsplash.png"></a>
+                        <a class="carousel-item" href="#two!"><img src="assets/img/projects/adam-solomon-WHUDOzd5IYU-unsplash.png"></a>
+                        <a class="carousel-item" href="#three!"><img src="assets/img/projects/adam-solomon-WHUDOzd5IYU-unsplash.png"></a>
+                    </div>
                 </div>
             </div>
         </div>
