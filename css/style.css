@@ -3,15 +3,10 @@
 @import url("//use.fontawesome.com/releases/v4.7.0/css/all.css'");
 
 /*--------------------------------------------headers styling*/
-html {
-  scroll-behavior: smooth;
-}
 body{
     scroll-behavior: smooth;
     font-family: 'Roboto';
 }
-
-/* -------------------- */
 
 /* LANDING */
 
