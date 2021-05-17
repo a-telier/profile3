@@ -17,23 +17,23 @@
 //     $('.collapsible').collapsible();
 // });
 
-// navigation toggler
-$(document).ready(function() {
-    $('.sidenav').sidenav();
-    $('.dropdown-trigger').dropdown({ hover: false });
-    $('select').formSelect();
-    $('.collapsible').collapsible();
-});
+// navigation toggler - not in use
+// $(document).ready(function() {
+//     $('.sidenav').sidenav();
+//     $('.dropdown-trigger').dropdown({ hover: false });
+//     $('select').formSelect();
+//     $('.collapsible').collapsible();
+// });
 
 // CAROUSEL
-var instance = M.Carousel.init({
-    fullWidth: true,
-    indicators: true
-});
+// var instance = M.Carousel.init({
+//     fullWidth: true,
+//     indicators: true
+// });
 
 // Or with jQuery
 
-$('.carousel.carousel-slider').carousel({
+$('.carousel-slider').slider({
     fullWidth: true,
     indicators: true
 });
