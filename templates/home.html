@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Head -->
+    <head>
+    {% block head %}
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Materialize CDN -->
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <!-- Own CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+        
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <!-- Own JS -->
+        <script src="../js/base.js"></script>
+
+        <!-- Firebase Storage -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.6.7/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/fec8644327.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <title>Alexandra Rabi</title>
+    {% endblock %}
+    </head>
+
+    <!-- Main -->
+    <body>
+        <!-- Navigation -->
+        <!-- <header class="container-fluid fixed-top">
+            <nav class="nav-wrapper h-100 w-100 mt-3"></nav>
+            <ul id="slide-out" class="sidenav my-auto"> -->
+                <!-- Close the menu -->
+                <!-- <li><a class="sidenav-close text-danger" href="#!"><i class="fas fa-times text-danger"></i>Close</a></li>
+                <hr>
+                <li><a href="#about-me"><i class="fas fa-info-circle"></i>About Me</a></li>
+                <li><a href="#what-I-do"><i class="fas fa-thumbtack"></i>Competences</a></li>
+                <li><a href="#brands"><i class="fas fa-heart"></i>Brands</a></li>
+                <li><a href="#projects"><i class="fas fa-cog"></i>Projects</a></li>
+            </ul> -->
+            
+            <!-- Sidenav trigger -->
+            <!-- <a href="#" data-target="slide-out" class="sidenav-trigger list-inline-item"><i class="material-icons">menu</i></a>  
+        </header> -->
+        <header>
+        {% block navbar %}
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top white text-black" id="navigation-menu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">Who I am </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#what-I-do" data-parent="#">What I do </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#brands">Brands </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#projects">Projects </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        {% endblock %}
+        </header>
+
+        <!-- Landing -->
+        <div class="container-fluid">
+            <section id="landing" class="mt-3">
+            <div class="row animate__animated animate__bounce animate__delay-2s">
+                <hr>
+                <div class="col s12 valign-wrapper">
+                    <div class="text-center text-white position-absolute" 
+                    style="padding-right: 10%; padding-left: 10%;">
+                        <h1>Hello! My name is Alexandra Rabi.</h1>
+                        <h3 class="width: 80%;">I am a digital marketeer with both technical and practical competences, experienced building teams, brands and business growth through digital communication & sales channels.</h3>
+                    </div>
+                    <img class="bg-landing d-sm-none" style="height: 160vw; width: 100%;" src="assets/img/landing/bg-laptop-horizontal.png" alt="">
+                    <img class="bg-landing d-none d-lg-block" style="height: 40vw; width: 100%;" src="assets/img/landing/bg-laptop-horizontal.png" alt="">
+                </div>
+            </div>
+            </section>
+        </div>
+
+        <!-- Sections -->
+        <div class="container">
+            <!-- About me -->
+            <section id="about-me">
+            <div class="row animate__animated animate__bounceInLeft">
+                <!-- Profile Intro -->
+                <div class="col s12 m6 l6 my-auto my-auto">
+                    <h1>Who I am</h1>
+                    <p>I was born in South-America and studied both bachelors and masters in France via a high-achievement scholarship, which eventually led me to my current home Stockholm!</p>
+                    <p>My unbringing - growing and working with entrpereneurship and technology - is a big part of who I am today. 
+                        I never stops learning & improving her skills. 
+                        In fact, this site is part of my Software Development program which I completed while working full-time.</p>
+                    <p>As a leader, I believe people perform their best when they feel valued, therefore I am approachable and solution-oriented.</p>
+                </div>
+                <!-- Profile Image -->
+                <div class="col s12 m6 l6 center-align">
+                    <img class="bg-contain" src="assets/img/profile/profile-vertical.png" alt="">
+                </div>
+            </div>
+            <hr>
+            </section>
+            <!-- What I do -->
+            <section id="what-I-do">
+            <div class="row animate__animated animate__bounceInRight">
+                <div class="col s12 w-100">
+                    <h1>What I do</h1>
+                    <p> I had the opportunity to combine technical and business skills to 
+                        drive 360 digital marketing campaigns - 
+                        from cretive concept, to execution and optimization, to measuring impact and business results.</p>
+                </div>
+            </div>
+            <!-- Skills -->
+            <div class="row">
+                <div class="col s12 center-align valign-wrapper">
+                    <span class="card small col s3 mx-2 pt-4">
+                        <h3>PROJECT MANAGEMENT</h3>
+                        <p>I am a skilled project manager with experience working with both external and internal stakeholders to create value-adding solutions.</p>
+                    </span>
+                    <span class="card small col s3 mx-2 pt-4">
+                        <h3>DIGITAL CAMPAIGNS</h3>
+                        <p>I build online communication concepts from strategy to execution and content production across multiple online channels.</p>
+                        <img src="assets/img/icons/online-campaigns.png" alt="online-campaign-icons" class="work-icons"/>
+                    </span>
+                    <span class="card small col s3 mx-2 pt-4">
+                        <h3>PERFORMANCE MARKETING</h3>
+                        <p>I set goals and I optimize channel, placement and content to get the highest possible outcome for the lowest investment.</p>
+                        <img src="assets/img/icons/performance-marketing.png" alt="performance-marketing-icons" class="work-icons"/>
+                    </span>
+                </div>
+                <div class="col s12 center-align valign-wrapper">
+                    <span class="card small col s3 mx-2 pt-4">
+                        <h3>E-COMMERCE</h3>
+                        <p>I build roadmaps to drive online sales growth and improve online experience, from strategy to execution connecting marketing and sales activities.</p>
+                        <img src="assets/img/icons/e-commerce.png" alt="e-com-icons" class="work-icons"/>
+                    </span>
+                    <span class="card small col s3 mx-2 pt-4">
+                        <h3>WEBSITES</h3>
+                        <p>I have launched several brand websites, both for new brands and for existing brands as well as actively working with different content management tools.</p>
+                        <img src="assets/img/icons/websites.png" alt="web-icons" class="work-icons"/>
+                    </span>
+                    <span class="card small col s3 mx-2 pt-4">
+                        <h3>ANALYTICS</h3>
+                            <p>Everything starts and ends with data. I work with large sets of data, which I then turn into actionable insights such as content & channel recommendations.</p>
+                            <img src="assets/img/icons/data-analysis.png" alt="data-icons" class="work-icons"/>
+                    </span>
+                </div>
+            </div> 
+            <hr>
+            </section>
+            <!-- Brands -->
+            <section id="brands">
+            <div class="row">
+                <div class="col s12">
+                    <h1>Brands I have worked with</h1>
+                    <img class="responsive-img" src="assets/img/brands/brands.gif" alt="">
+                </div>
+            </div>
+            <hr>
+            </section>
+            <!-- Projects -->
+            <section id="projects">
+                <div class="row">
+                    <div class="col s12">
+                        <h1>Projects I have built</h1>
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="../img/projects/a-telier-beauty.png"></a>
+                            <a class="carousel-item" href="#two!"><img src="../img/projects/a-telier-beauty.png"></a>
+                            <a class="carousel-item" href="#three!"><img src="../img/projects/a-telier-beauty.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+
+    <!-- Footer -->
+    {% block footer %}
+    <footer class="page-footer grey lighten-2 text-black">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="">Footer Content</h5>
+                <p class="">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="">Links</h5>
+                <ul>
+                  <li><a class="text-black" href="#!">Link 1</a></li>
+                  <li><a class="text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <h3 class="a-telier text-center text-darken-2">made by l'A-telier</h3>
+            </div>
+          </div>
+    </footer>
+    {% endblock %}
+
+    <script>
+    </script>
+
+</html>

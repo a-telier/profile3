@@ -25,15 +25,15 @@
 //     $('.collapsible').collapsible();
 // });
 
+
 // CAROUSEL
-// var instance = M.Carousel.init({
-//     fullWidth: true,
-//     indicators: true
-// });
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.carousel');
+//     var instances = M.Carousel.init(elems, options);
+//   });
 
 // Or with jQuery
 
-$('.carousel-slider').slider({
-    fullWidth: true,
-    indicators: true
-});
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
