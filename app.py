@@ -16,7 +16,7 @@ todo_ref = db.collection('todos')
 
 @app.route('/')
 def about():
-    return render_template("home.html")
+    return render_template("template/home.html")
 
 @app.route('/add', methods=['POST'])
 def create():
