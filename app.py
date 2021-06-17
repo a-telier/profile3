@@ -2,8 +2,10 @@
 
 # Required imports
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template, redirect, url_for, session
 from firebase_admin import credentials, firestore, initialize_app
+
+from bson.objectid import ObjectId
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -15,8 +17,9 @@ db = firestore.client()
 todo_ref = db.collection('todos')
 
 @app.route('/')
+@app.route('/home')
 def about():
-    return render_template("template/home.html")
+    return render_template("templates/home.html")
 
 @app.route('/add', methods=['POST'])
 def create():
